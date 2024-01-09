@@ -1,0 +1,201 @@
+<template>
+   <v-app :theme="theme">
+      <v-app-bar>
+        <template v-slot:prepend>
+          <!-- สร้างปุ่มเมนูสามขีด -->
+          <v-app-bar-nav-icon></v-app-bar-nav-icon> 
+        </template>
+        <v-app-bar-title>MENU</v-app-bar-title>
+        <v-spacer></v-spacer>
+        <v-btn :prepend-icon = "theme === 'light' ?
+          'mdi-weather-sunny' : 'mdi-weather-night'"
+          @click="onToggleTheme"
+        >
+          Thitiporn Kaewburong
+        </v-btn>
+      </v-app-bar>
+
+      <!-- Content -->
+      <v-main >
+        <v-container>
+          <h1>Content Area</h1>
+          <v-row-dense >
+            <v-col cols="12" md="15">
+              <v-card>
+                <v-img
+                 src="https://down-th.img.susercontent.com/file/163fa7a8d577c0297b6e87d1a44c65c7"
+                 height="400px" 
+                 class="align-end" 
+                 cover
+                >
+                </v-img>
+                <v-card-title>
+                  POEM - RED ROSE
+                </v-card-title>
+                <v-card-text>
+                  <h4>Work in University</h4>
+                </v-card-text>
+                <!-- <v-divider></v-divider> -->
+                <v-card-action>
+                  <v-dialog width="500">
+                    <template v-slot:activator="{ props }">
+                      <v-btn v-bind="props">
+                        Learn More
+                      </v-btn>
+                    </template>
+                    <template v-slot:default="{ isActive }">
+                      <v-card title="Dialog">
+                        <v-card-text>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </v-card-text>
+
+                        <v-card-actions>
+                          <v-spacer></v-spacer>
+
+                          <v-btn
+                            text="Close Dialog"
+                            @click="isActive.value = false"
+                          ></v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </template>
+                  </v-dialog>
+                </v-card-action>
+              </v-card>
+              <v-card style="margin-top:20px;">
+                <v-img src="https://img.salehere.co.th/p/1200x0/2020/12/02/f6ntkjrig29m.jpg"
+                  height="400px" class="align-end" cover
+                >
+                </v-img>
+                <v-card-title>
+                  POEM - RED ROSE
+                </v-card-title>
+                <v-card-text>
+                  <h4>Work in University</h4>
+                </v-card-text>
+                <!-- <v-divider></v-divider> -->
+                <v-card-action>
+                  <v-dialog width="500">
+                    <template v-slot:activator="{ props }">
+                      <v-btn v-bind="props">
+                        Learn More
+                      </v-btn>
+                    </template>
+                    <template v-slot:default="{ isActive }">
+                      <v-card title="Dialog">
+                        <v-card-text>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </v-card-text>
+
+                        <v-card-actions>
+                          <v-spacer></v-spacer>
+
+                          <v-btn
+                            text="Close Dialog"
+                            @click="isActive.value = false"
+                          ></v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </template>
+                  </v-dialog>
+                </v-card-action>
+              </v-card>
+              <v-card style="margin-top:20px;">
+                <v-img src="https://style.katexoxo.com/wp-content/uploads/2022/02/1-5.jpg"
+                  height="400px" class="align-end" cover
+                >
+                </v-img>
+                <v-card-title>
+                  POEM - RED ROSE
+                </v-card-title>
+                <v-card-text>
+                  <h4>Work in University</h4>
+                </v-card-text>
+                <!-- <v-divider></v-divider> -->
+                <v-card-action>
+                  <v-dialog width="500">
+                    <template v-slot:activator="{ props }">
+                      <v-btn v-bind="props">
+                        Learn More
+                      </v-btn>
+                    </template>
+                    <template v-slot:default="{ isActive }">
+                      <v-card title="Dialog">
+                        <v-card-text>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </v-card-text>
+
+                        <v-card-actions>
+                          <v-spacer></v-spacer>
+
+                          <v-btn
+                            text="Close Dialog"
+                            @click="isActive.value = false"
+                          ></v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </template>
+                  </v-dialog>
+                </v-card-action>
+              </v-card>
+              <v-card style="margin-top:20px;">
+                <v-img src="https://www.เช่าชุดเชียงใหม่.com/wp-content/uploads/2022/11/S__58531848.jpg"
+                  height="400px" class="align-end" cover
+                >
+                </v-img>
+                <v-card-title>
+                  POEM - RED ROSE
+                </v-card-title>
+                <v-card-text>
+                  <h4>Work in University</h4>
+                </v-card-text>
+                <!-- <v-divider></v-divider> -->
+                <v-card-action>
+                  <v-dialog width="500">
+                    <template v-slot:activator="{ props }"> 
+                      <v-btn v-bind="props">
+                        Learn More
+                      </v-btn>
+                    </template>
+                    <template v-slot:default="{ isActive }"> 
+                      <v-card title="Dialog">
+                        <v-card-text>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </v-card-text>
+
+                        <v-card-actions>
+                          <v-spacer></v-spacer>
+
+                          <v-btn
+                            text="Close Dialog"
+                            @click="isActive.value = false"
+                          ></v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </template>
+                  </v-dialog>
+                </v-card-action>
+              </v-card>
+            </v-col>
+          </v-row-dense>
+        </v-container>
+      </v-main>
+   </v-app>
+</template>
+
+
+
+<script setup>
+  import { ref } from "vue";
+  const theme =ref('light')
+  function onToggleTheme() {
+    theme.value = theme.value === 'light' ? 'dark' : 'light'
+  }
+  const items = ref([])
+  fetch('https://www.melivecode.com/api/users')
+  .then(res => res.json())
+  .then((result) => {
+    items.value = result
+    console.log(result)
+  })
+</script>

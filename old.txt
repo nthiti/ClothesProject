@@ -1,0 +1,58 @@
+<template>
+    <v-card>
+      <v-layout>
+        <v-navigation-drawer
+          image="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg"
+          permanent
+        >
+          <v-list nav>
+            <v-list-item prepend-icon="mdi-email" title="Inbox" value="inbox"></v-list-item>
+            <v-list-item prepend-icon="mdi-account-supervisor-circle" title="Supervisors" value="supervisors"></v-list-item>
+            <v-list-item prepend-icon="mdi-clock-start" title="Clock-in" value="clockin"></v-list-item>
+          </v-list>
+        </v-navigation-drawer>
+      </v-layout>
+    <v-carousel>
+      <v-carousel-item
+        src="https://addons-media.operacdn.com/media/CACHE/images/themes/05/144705/1.0-rev1/images/0993404e-79e0-4052-923d-89236e7c102f/e4f4077f6d1f715a07786ff7692a8d1d.jpg"
+        cover
+      ></v-carousel-item>
+
+      <v-carousel-item
+        src="https://as1.ftcdn.net/v2/jpg/02/35/77/78/1000_F_235777828_t41SkAx2dgd2Zy3XgfJ0fH3tVjmZj4KS.jpg"
+        cover
+      ></v-carousel-item>
+
+      <v-carousel-item
+        src="https://rare-gallery.com/uploads/posts/4524889-moon-sky.jpg"
+        cover
+      ></v-carousel-item>
+    </v-carousel>
+    
+    <v-container class="bg-surface-variant">
+      <v-row no-gutters>
+        <v-col cols="5">
+            <v-text-field label="First name"></v-text-field>
+        </v-col>
+
+        <v-col cols="5">
+            <v-text-field label="Last name"></v-text-field>
+        </v-col>
+
+        <v-col cols="2">
+            <v-text-field label="Age"></v-text-field>
+        </v-col>
+      </v-row>
+      <v-col cols="12" sm="100" md="400">
+        <v-btn block rounded="0" size="x-large"
+        color="green">Submit</v-btn>
+      </v-col>
+    </v-container>
+  </v-card>
+</template>
+
+
+
+<script setup>
+  import HelloWorld from '@/components/HelloWorld.vue'
+</script>
