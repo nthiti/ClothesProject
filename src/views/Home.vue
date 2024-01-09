@@ -34,7 +34,12 @@
           <v-row class="type-cloth" no-gutters>
             <v-col order="first">
               <v-sheet class="pa-2 ma-2">
-                <v-card  @click="goToShirt">
+                <v-card  
+                @click="goToShirt"
+                @mouseover="cardHover = 1"
+                @mouseleave="cardHover = 0"
+                :color="cardHover === 1 ? 'red' : ''"
+                >
                   <v-img src="https://cdn.icon-icons.com/icons2/2272/PNG/512/short_sleeves_clothing_icon_140709.png" 
                     height="100px" 
                     width="100px"
@@ -46,7 +51,12 @@
             </v-col>
             <v-col order="">
               <v-sheet class="pa-2 ma-2">
-                <v-card @click="goToHood">
+                <v-card 
+                @click="goToHood"
+                @mouseover="cardHover = 2"
+                @mouseleave="cardHover = 0"
+                :color="cardHover === 2 ? 'red' : ''"
+                >
                   <v-img src="https://cdn.icon-icons.com/icons2/2272/PNG/512/sweater_clothing_icon_140715.png" 
                     height="100px" 
                     width="100px"
@@ -58,7 +68,12 @@
             </v-col>
             <v-col order="">
               <v-sheet class="pa-2 ma-2">
-                <v-card @click="goToFleece">
+                <v-card 
+                @click="goToFleece"
+                @mouseover="cardHover = 3"
+                @mouseleave="cardHover = 0"
+                :color="cardHover === 3 ? 'red' : ''"
+                >
                   <v-img src="https://cdn.icon-icons.com/icons2/2272/PNG/512/jacket_clothing_icon_140711.png" 
                     height="100px" 
                     width="100px"
@@ -70,7 +85,12 @@
             </v-col>
             <v-col order="last">
               <v-sheet class="pa-2 ma-2">
-                <v-card @click="goToJeans">
+                <v-card 
+                @click="goToJeans"
+                @mouseover="cardHover = 4"
+                @mouseleave="cardHover = 0"
+                :color="cardHover === 4 ? 'red' : ''"
+                >
                   <v-img src="https://cdn.icon-icons.com/icons2/2272/PNG/512/shorts_clothing_icon_140705.png" 
                     height="100px" 
                     width="100px"
@@ -391,7 +411,11 @@
 <script>
 import { ref } from "vue";
 export default {
-  data: () => ({}),
+  data: () => {
+     return {
+        cardHover: 0
+      }
+  },
   watch: {
     group () {
       this.drawer = false
