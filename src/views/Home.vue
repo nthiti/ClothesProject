@@ -35,7 +35,8 @@
             <v-col order="first">
               <v-sheet class="pa-2 ma-2">
                 <v-card  
-                @click="goToShirt"
+                to="/shirt"
+                @click="resetScrollTop"
                 @mouseover="cardHover = 1"
                 @mouseleave="cardHover = 0"
                 :color="cardHover === 1 ? 'red' : ''"
@@ -52,7 +53,8 @@
             <v-col order="">
               <v-sheet class="pa-2 ma-2">
                 <v-card 
-                @click="goToHood"
+                to="/hood"
+                @click="resetScrollTop"
                 @mouseover="cardHover = 2"
                 @mouseleave="cardHover = 0"
                 :color="cardHover === 2 ? 'red' : ''"
@@ -69,7 +71,8 @@
             <v-col order="">
               <v-sheet class="pa-2 ma-2">
                 <v-card 
-                @click="goToFleece"
+                to="/fleece"
+                @click="resetScrollTop"
                 @mouseover="cardHover = 3"
                 @mouseleave="cardHover = 0"
                 :color="cardHover === 3 ? 'red' : ''"
@@ -86,7 +89,8 @@
             <v-col order="last">
               <v-sheet class="pa-2 ma-2">
                 <v-card 
-                @click="goToJeans"
+                to="/jeans"
+                @click="resetScrollTop"
                 @mouseover="cardHover = 4"
                 @mouseleave="cardHover = 0"
                 :color="cardHover === 4 ? 'red' : ''"
@@ -434,6 +438,9 @@ export default {
     goToJeans() {
       this.$router.push('/jeans')
     },
+    resetScrollTop() { // ฟังก์ชันสำหรับ Reset Scroll position เมื่อหน้าใหม่ถูกโหลด
+        window.scrollTo(0, 0); // กลับไปที่ตำแหน่ง (0, 0) ของหน้า
+      },
   },
   
 };

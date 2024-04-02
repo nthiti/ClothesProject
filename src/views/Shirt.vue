@@ -74,7 +74,7 @@
                 <h4 class="text-black">Cardigan</h4>
                 <h3 class="text-red">THB 990.00</h3>
                 <v-img 
-                src="https://image.uniqlo.com/UQ/ST3/th/imagesgoods/461033/item/thgoods_09_461033.jpg?width=828"
+                src="https://image.uniqlo.com/UQ/ST3/th/imagesgoods/461033/item/thgoods_70_461033.jpg?width=750"
                 height="200"
                 width="200"
                 >
@@ -102,7 +102,7 @@
                 <h4 class="text-black">Sleeve Sweater</h4>
                 <h3 class="text-red">THB 790.00</h3>
                 <v-img 
-                src="https://image.uniqlo.com/UQ/ST3/th/imagesgoods/461033/item/thgoods_67_461033.jpg?width=828"
+                src="https://image.uniqlo.com/UQ/ST3/th/imagesgoods/461033/item/thgoods_06_461033.jpg?width=750"
                 height="200"
                 width="200"
                 >

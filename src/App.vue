@@ -13,14 +13,12 @@
       
       <!--  Drawer -->
       <v-navigation-drawer v-model="drawer" class="indigo">
-          <v-list-item link title="Home" @click="goToHome"></v-list-item>
-          <v-list-item link title="Shirt" @click="goToShirt"></v-list-item>
-          <v-list-item link title="Sweatshirts & Hoodies" @click="goToHood"></v-list-item>
-          <v-list-item link title="Fleece" @click="goToFleece"></v-list-item>
-          <v-list-item link title="Jeans" @click="goToJeans"></v-list-item>
-          <v-list-item link title="Amazon" @click="goToAmazon"></v-list-item>
-
-
+          <v-list-item link title="Home" to="/home"></v-list-item>
+          <v-list-item link title="Shirt" to="/shirt"></v-list-item>
+          <v-list-item link title="Sweatshirts & Hoodies" to="/hood"></v-list-item>
+          <v-list-item link title="Fleece" to="/fleece"></v-list-item>
+          <v-list-item link title="Jeans" to="/jeans"></v-list-item>
+          <v-list-item link title="Amazon" to="/amazon"></v-list-item>
 
           <v-list v-model:opend="open">
             <v-list-group value="shirt">
@@ -53,7 +51,6 @@
 </template>
 
 <script>
-  import { ref } from "vue";
   export default {
   data: () => ({
       theme: 'light',
@@ -72,29 +69,14 @@
     onToggleTheme() {
       this.theme = this.theme === 'light' ? 'dark' : 'light';
     },
-    goToHome() {
-      this.$router.push('/home')
-    },
-    goToShirt() {
-      this.$router.push('/shirt')
-    },
-    goToHood() {
-      this.$router.push('/hood')
-    },
-    goToFleece() {
-      this.$router.push('/fleece')
-    },
     goToLogin() {
       this.$router.push('/login')
-    },
-    goToJeans() {
-      this.$router.push('/jeans')
     },
     goToBasket() {
       this.$router.push('/basket')
     },
-    goToAmazon() {
-      this.$router.push('/amazon')
+    goToHome() {
+      this.$router.push('/home')
     },
   },
   mounted() {

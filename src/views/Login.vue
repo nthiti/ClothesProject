@@ -1,7 +1,6 @@
 <template>
     <br><br><br>
     <v-container>
-        <div>
             <v-card 
             class="mx-auto"
             elevation="12"
@@ -27,7 +26,7 @@
                     </v-col>
                 </v-row>
             </v-card>
-        </div>
+
     </v-container>
 </template>
 
